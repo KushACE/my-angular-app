@@ -1,0 +1,14 @@
+<div>
+    <label for="postfixExpression">Enter Postfix Expression:</label>
+    <input type="text" id="postfixExpression" [(ngModel)]="postfixExpression" />
+    <button (click)="evaluatePostfix()">Evaluate</button>
+  </div>
+  
+  <div *ngIf="result !== null">
+    <p>Result: {{ result }}</p>
+  </div>
+  <div *ngIf="result === null">
+    <p>Error: Invalid postfix expression</p>
+  </div>
+
+  

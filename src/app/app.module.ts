@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; // Import FormsModule for ngModel
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PostfixEvaluatorComponent } from './postfix-evaluator/postfix-evaluator.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostfixEvaluatorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule // Include FormsModule here
   ],
   providers: [],
   bootstrap: [AppComponent]
